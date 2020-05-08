@@ -1,0 +1,43 @@
+﻿<Window x:Class="DbProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DbProject"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+    
+    <Grid>
+        <TabControl x:Name="MainView">
+            <TabItem x:Name="ChatsTab" >
+                <TabItem.Header>Chats</TabItem.Header>
+                <local:ChatView/>
+            </TabItem>
+            <TabItem x:Name="HostsGuidesTab">
+                <TabItem.Header>HostGuides</TabItem.Header>
+                <local:HostGuideView/>
+            </TabItem>
+            <TabItem x:Name="PlacesTab">
+                <TabItem.Header>Places</TabItem.Header>
+                <local:PlaceView/>
+            </TabItem>
+            <TabItem x:Name="PlaceHostsTab">
+                <TabItem.Header>PlaceHost</TabItem.Header>
+                <local:PlaceHostView/>
+            </TabItem>
+            <TabItem x:Name="ReviewsTab">
+                <TabItem.Header>Reviews</TabItem.Header>
+                <local:ReviewView/>
+            </TabItem>
+            <TabItem x:Name="ToursTab">
+                <TabItem.Header>Tours</TabItem.Header>
+                <local:TourView/>
+            </TabItem>
+            <TabItem x:Name="TouristGuidesTab">
+                <TabItem.Header>TouristGuides</TabItem.Header>
+                <local:TouristGuideView/>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

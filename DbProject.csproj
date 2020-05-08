@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Page Update="Views\PlaceView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\HostGuideView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\ChatView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\PlaceHostView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\ReviewView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\TourView.xaml">
+        <Generator></Generator>
+      </Page>
+      <Page Update="Views\TouristGuideView.xaml">
+        <Generator></Generator>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Views\PlaceView.xaml.cs">
+        <DependentUpon>PlaceView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\HostGuideView.xaml.cs">
+        <DependentUpon>HostGuideView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\ChatView.xaml.cs">
+        <DependentUpon>ChatView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\PlaceHostView.xaml.cs">
+        <DependentUpon>PlaceHostView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\ReviewView.xaml.cs">
+        <DependentUpon>ReviewView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\TourView.xaml.cs">
+        <DependentUpon>TourView.xaml</DependentUpon>
+      </Compile>
+      <Compile Update="Views\TouristGuideView.xaml.cs">
+        <DependentUpon>TouristGuideView.xaml</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>
